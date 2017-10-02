@@ -1,0 +1,31 @@
+{
+    "name": "traider.io",
+    "description": "",
+    "version": "0.0.1",
+    "main": "traider.js",
+    "author": {
+        "name": "Michael Logic",
+        "email": "chemistry@michaellogic.com"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "mit"
+    },
+    "dependencies": {
+        "bson": "^1.0.4",
+        "connect-mongo": "0.5.x",
+        "cookie-parser": "*",
+        "express": "3.x",
+        "express-session": "*",
+        "mongodb": "2.2.19",
+        "mongoose": "^4.11.13",
+        "request-json": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:MichaelLogic/shubert-cycles-v1.git"
+    },
+    "bugs": {
+        "url": "https://github.com/EastpointSoftware/traider.io/issues"
+    }
+}

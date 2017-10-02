@@ -1,0 +1,4 @@
+#main-container { margin-top: 60px; }
+#basket-table { width: 100%; }
+#basket-table tr:nth-child(2n) td { background-color: #efefef; }
+#basket-table th, #basket-table td { padding: 5px; }

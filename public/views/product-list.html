@@ -1,0 +1,16 @@
+<h1>product list</h1>
+<div class="col-sm-3" data-ng-repeat="i in products">
+    <form>
+        <a href="/product/{{i._id}}">
+            <img src="/img/horse524.jpg" alt="A horse" style="width:100%">
+        </a>
+        <p>{{i.Name}} : {{_id}}</p>
+        <!--
+            <select>
+                <option value="">Qty</option>
+                <option data-ng-repeat="j in [1,2,3,4,5,6,7,8,9,10]">{{j}}</option>
+            </select>
+            <input type="submit" value="Add to basket" />
+        -->
+    </form>
+</div> 
