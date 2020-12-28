@@ -1,4 +1,4 @@
-var db = require("../db/db.products.js");
+const db = require("../db/db.products.js");
 
 // define the routes for /api/users
 module.exports = function attachHandlers(router) { //, passport) {
@@ -66,12 +66,11 @@ function seed(req, res) {
     });
 }
 
-function view(req, res) {
-    db.getById(req.params.id, function(err, data) {
+function view({params}, res) {
+    db.getById(params.id, function(err, data) {
         if (err) {
             console.log(err);
-            res.statusCode = 500;
-            return res.json({
+            return res.status(500).send({
                 "Error": err
             });
         } else {
