@@ -1,16 +1,16 @@
-var express = require('express'),
+const express = require('express'),
     cookieParser = require('cookie-parser'),
     expressSession = require('express-session');
 
-var routes = require('./routes/routes.js');
-var MongoStore = require('connect-mongo')({
+const routes = require('./routes/routes.js');
+const MongoStore = require('connect-mongo')({
     session: expressSession
 });
 
 
 createServer = function createServer() {
 
-    var server = express();
+    const server = express();
     // specify middleware 
     //server.use(express.bodyParser());
     server.use(express.static(__dirname + '/public'));
@@ -36,8 +36,8 @@ createServer = function createServer() {
 };
 
 
-var server = createServer();
-var port = Number(process.env.PORT || 5000);
+const server = createServer();
+const port = Number(process.env.PORT || 5000);
 server.listen(port, function() {
     console.log("Listening on " + port);
 });
